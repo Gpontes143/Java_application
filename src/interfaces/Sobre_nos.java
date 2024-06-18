@@ -32,9 +32,12 @@ public class Sobre_nos extends javax.swing.JFrame {
         jMenu3 = new javax.swing.JMenu();
         Registro = new javax.swing.JMenu();
         jMenu4 = new javax.swing.JMenu();
-        Close = new javax.swing.JMenu();
+        Apoie = new javax.swing.JMenu();
+        Close1 = new javax.swing.JMenu();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setUndecorated(true);
+        setResizable(false);
 
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/imagem.png"))); // NOI18N
 
@@ -67,13 +70,22 @@ public class Sobre_nos extends javax.swing.JFrame {
         });
         jMenuBar1.add(jMenu4);
 
-        Close.setText("Close");
-        Close.addMouseListener(new java.awt.event.MouseAdapter() {
+        Apoie.setText("Apoie");
+        Apoie.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
-                CloseMouseClicked(evt);
+                ApoieMouseClicked(evt);
             }
         });
-        jMenuBar1.add(Close);
+        jMenuBar1.add(Apoie);
+
+        Close1.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        Close1.setText("Close");
+        Close1.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                Close1MouseClicked(evt);
+            }
+        });
+        jMenuBar1.add(Close1);
 
         setJMenuBar(jMenuBar1);
 
@@ -89,6 +101,7 @@ public class Sobre_nos extends javax.swing.JFrame {
         );
 
         pack();
+        setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
     private void jMenu1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jMenu1MouseClicked
@@ -105,17 +118,29 @@ public class Sobre_nos extends javax.swing.JFrame {
         f.setVisible(true);
     }//GEN-LAST:event_RegistroMouseClicked
 
-    private void CloseMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_CloseMouseClicked
-        // TODO add your handling code here:
-        dispose();
-    }//GEN-LAST:event_CloseMouseClicked
-
     private void jMenu4MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jMenu4MouseClicked
         // TODO add your handling code here:
         Sobre_nos f = new Sobre_nos();
         this.dispose();
         f.setVisible(true);
     }//GEN-LAST:event_jMenu4MouseClicked
+
+    private void CloseMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_CloseMouseClicked
+        // TODO add your handling code here:
+        dispose();
+    }//GEN-LAST:event_CloseMouseClicked
+
+    private void Close1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Close1MouseClicked
+        // TODO add your handling code here:
+        dispose();
+    }//GEN-LAST:event_Close1MouseClicked
+
+    private void ApoieMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_ApoieMouseClicked
+        // TODO add your handling code here:
+        Apoie f = new Apoie();
+        this.dispose();
+        f.setVisible(true);
+    }//GEN-LAST:event_ApoieMouseClicked
 
     /**
      * @param args the command line arguments
@@ -153,7 +178,9 @@ public class Sobre_nos extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JMenu Apoie;
     private javax.swing.JMenu Close;
+    private javax.swing.JMenu Close1;
     private javax.swing.JMenu Registro;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JMenu jMenu1;
