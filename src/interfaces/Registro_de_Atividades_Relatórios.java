@@ -125,9 +125,10 @@ private void saveTableToFile() {
         setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         setUndecorated(true);
 
-        jPanel1.setBackground(new java.awt.Color(102, 102, 102));
+        jPanel1.setBackground(new java.awt.Color(255, 255, 255));
 
         btExcluir.setBackground(new java.awt.Color(204, 204, 204));
+        btExcluir.setForeground(new java.awt.Color(0, 0, 0));
         btExcluir.setText("Excluir");
         btExcluir.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -136,6 +137,7 @@ private void saveTableToFile() {
         });
 
         btAlterar.setBackground(new java.awt.Color(204, 204, 204));
+        btAlterar.setForeground(new java.awt.Color(0, 0, 0));
         btAlterar.setText("Alterar");
         btAlterar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -144,6 +146,7 @@ private void saveTableToFile() {
         });
 
         btInserir.setBackground(new java.awt.Color(204, 204, 204));
+        btInserir.setForeground(new java.awt.Color(0, 0, 0));
         btInserir.setText("Inserir");
         btInserir.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -153,7 +156,7 @@ private void saveTableToFile() {
 
         jLabel1.setBackground(new java.awt.Color(255, 255, 255));
         jLabel1.setFont(new java.awt.Font("Segoe UI Semibold", 1, 14)); // NOI18N
-        jLabel1.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel1.setForeground(new java.awt.Color(0, 0, 0));
         jLabel1.setText("Detalhes");
 
         txthospede.setBackground(new java.awt.Color(204, 204, 204));
@@ -165,7 +168,7 @@ private void saveTableToFile() {
 
         jLabel2.setBackground(new java.awt.Color(255, 255, 255));
         jLabel2.setFont(new java.awt.Font("Segoe UI Semibold", 1, 14)); // NOI18N
-        jLabel2.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel2.setForeground(new java.awt.Color(0, 0, 0));
         jLabel2.setText("Horário");
 
         txtquarto.setBackground(new java.awt.Color(204, 204, 204));
@@ -177,14 +180,14 @@ private void saveTableToFile() {
 
         jLabel3.setBackground(new java.awt.Color(255, 255, 255));
         jLabel3.setFont(new java.awt.Font("Segoe UI Semibold", 1, 14)); // NOI18N
-        jLabel3.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel3.setForeground(new java.awt.Color(0, 0, 0));
         jLabel3.setText("Atividade");
 
         txtandar.setBackground(new java.awt.Color(204, 204, 204));
 
-        jLabel4.setBackground(new java.awt.Color(255, 255, 255));
+        jLabel4.setBackground(new java.awt.Color(0, 0, 0));
         jLabel4.setFont(new java.awt.Font("Segoe UI Semibold", 1, 14)); // NOI18N
-        jLabel4.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel4.setForeground(new java.awt.Color(0, 0, 0));
         jLabel4.setText("Data");
 
         tbEstoque.setAutoCreateRowSorter(true);
@@ -227,7 +230,7 @@ private void saveTableToFile() {
 
         jLabel6.setBackground(new java.awt.Color(255, 255, 255));
         jLabel6.setFont(new java.awt.Font("Segoe UI Semibold", 1, 14)); // NOI18N
-        jLabel6.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel6.setForeground(new java.awt.Color(0, 0, 0));
         jLabel6.setText("Responsável");
 
         txtpreco.setBackground(new java.awt.Color(204, 204, 204));
@@ -302,6 +305,7 @@ private void saveTableToFile() {
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
+        Cadastro.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
         Cadastro.setText("Cadastro hotel");
         Cadastro.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
@@ -310,6 +314,7 @@ private void saveTableToFile() {
         });
         jMenuBar1.add(Cadastro);
 
+        Hospedes.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
         Hospedes.setText("Hospedes");
         Hospedes.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
@@ -318,6 +323,7 @@ private void saveTableToFile() {
         });
         jMenuBar1.add(Hospedes);
 
+        Close.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
         Close.setText("Close");
         Close.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
@@ -326,6 +332,7 @@ private void saveTableToFile() {
         });
         jMenuBar1.add(Close);
 
+        Salvar.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
         Salvar.setText("Salvar");
         Salvar.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {

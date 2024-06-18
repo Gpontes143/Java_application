@@ -107,9 +107,11 @@ public class Visualização_de_Informações_dos_Hóspedes extends javax.swing.J
         setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         setUndecorated(true);
 
-        jPanel1.setBackground(new java.awt.Color(102, 102, 102));
+        jPanel1.setBackground(new java.awt.Color(255, 255, 255));
+        jPanel1.setForeground(new java.awt.Color(0, 0, 0));
 
         btExcluir.setBackground(new java.awt.Color(204, 204, 204));
+        btExcluir.setForeground(new java.awt.Color(0, 0, 0));
         btExcluir.setText("Excluir");
         btExcluir.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -118,6 +120,7 @@ public class Visualização_de_Informações_dos_Hóspedes extends javax.swing.J
         });
 
         btAlterar.setBackground(new java.awt.Color(204, 204, 204));
+        btAlterar.setForeground(new java.awt.Color(0, 0, 0));
         btAlterar.setText("Alterar");
         btAlterar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -126,6 +129,7 @@ public class Visualização_de_Informações_dos_Hóspedes extends javax.swing.J
         });
 
         btInserir.setBackground(new java.awt.Color(204, 204, 204));
+        btInserir.setForeground(new java.awt.Color(0, 0, 0));
         btInserir.setText("Inserir");
         btInserir.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -135,7 +139,7 @@ public class Visualização_de_Informações_dos_Hóspedes extends javax.swing.J
 
         jLabel1.setBackground(new java.awt.Color(255, 255, 255));
         jLabel1.setFont(new java.awt.Font("Segoe UI Semibold", 1, 14)); // NOI18N
-        jLabel1.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel1.setForeground(new java.awt.Color(0, 0, 0));
         jLabel1.setText("Nome:");
 
         txtnome.setBackground(new java.awt.Color(204, 204, 204));
@@ -147,7 +151,7 @@ public class Visualização_de_Informações_dos_Hóspedes extends javax.swing.J
 
         jLabel2.setBackground(new java.awt.Color(255, 255, 255));
         jLabel2.setFont(new java.awt.Font("Segoe UI Semibold", 1, 14)); // NOI18N
-        jLabel2.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel2.setForeground(new java.awt.Color(0, 0, 0));
         jLabel2.setText("Telefone");
 
         txtemail.setBackground(new java.awt.Color(204, 204, 204));
@@ -159,7 +163,7 @@ public class Visualização_de_Informações_dos_Hóspedes extends javax.swing.J
 
         jLabel4.setBackground(new java.awt.Color(255, 255, 255));
         jLabel4.setFont(new java.awt.Font("Segoe UI Semibold", 1, 14)); // NOI18N
-        jLabel4.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel4.setForeground(new java.awt.Color(0, 0, 0));
         jLabel4.setText("Email");
 
         tbEstoque.setAutoCreateRowSorter(true);
@@ -200,8 +204,8 @@ public class Visualização_de_Informações_dos_Hóspedes extends javax.swing.J
 
         jLabel5.setBackground(new java.awt.Color(255, 255, 255));
         jLabel5.setFont(new java.awt.Font("Segoe UI Semibold", 1, 14)); // NOI18N
-        jLabel5.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel5.setText("Cpf");
+        jLabel5.setForeground(new java.awt.Color(0, 0, 0));
+        jLabel5.setText("CPF");
 
         txtcpf.setBackground(new java.awt.Color(204, 204, 204));
         try {
@@ -222,9 +226,9 @@ public class Visualização_de_Informações_dos_Hóspedes extends javax.swing.J
             ex.printStackTrace();
         }
 
-        jCheckBox1.setBackground(new java.awt.Color(102, 102, 102));
+        jCheckBox1.setBackground(new java.awt.Color(255, 255, 255));
         jCheckBox1.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
-        jCheckBox1.setForeground(new java.awt.Color(255, 255, 255));
+        jCheckBox1.setForeground(new java.awt.Color(0, 0, 0));
         jCheckBox1.setText("Fez o Check-In");
         jCheckBox1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -232,9 +236,9 @@ public class Visualização_de_Informações_dos_Hóspedes extends javax.swing.J
             }
         });
 
-        jCheckBox2.setBackground(new java.awt.Color(102, 102, 102));
+        jCheckBox2.setBackground(new java.awt.Color(255, 255, 255));
         jCheckBox2.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
-        jCheckBox2.setForeground(new java.awt.Color(255, 255, 255));
+        jCheckBox2.setForeground(new java.awt.Color(0, 0, 0));
         jCheckBox2.setText("Fez o Check-Out");
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
@@ -277,7 +281,7 @@ public class Visualização_de_Informações_dos_Hóspedes extends javax.swing.J
                         .addComponent(jLabel5)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                         .addComponent(txtcpf, javax.swing.GroupLayout.PREFERRED_SIZE, 179, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addContainerGap(56, Short.MAX_VALUE))
+                .addContainerGap(54, Short.MAX_VALUE))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -308,6 +312,7 @@ public class Visualização_de_Informações_dos_Hóspedes extends javax.swing.J
 
         jMenuBar1.setBackground(new java.awt.Color(204, 204, 204));
 
+        jMenu1.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
         jMenu1.setText("Cadastro hotel");
         jMenu1.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
@@ -316,9 +321,11 @@ public class Visualização_de_Informações_dos_Hóspedes extends javax.swing.J
         });
         jMenuBar1.add(jMenu1);
 
+        jMenu3.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
         jMenu3.setText("Hospedes");
         jMenuBar1.add(jMenu3);
 
+        Registro.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
         Registro.setText("Relatórios");
         Registro.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
@@ -327,6 +334,7 @@ public class Visualização_de_Informações_dos_Hóspedes extends javax.swing.J
         });
         jMenuBar1.add(Registro);
 
+        Close.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
         Close.setText("Close");
         Close.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
@@ -335,6 +343,7 @@ public class Visualização_de_Informações_dos_Hóspedes extends javax.swing.J
         });
         jMenuBar1.add(Close);
 
+        Salvar.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
         Salvar.setText("Salvar");
         Salvar.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
