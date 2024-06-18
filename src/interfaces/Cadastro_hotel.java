@@ -117,7 +117,7 @@ try (FileWriter fw = new FileWriter(file)) {
         setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         setUndecorated(true);
 
-        jPanel1.setBackground(new java.awt.Color(102, 102, 102));
+        jPanel1.setBackground(new java.awt.Color(153, 153, 153));
 
         btExcluir.setBackground(new java.awt.Color(204, 204, 204));
         btExcluir.setText("Excluir");
