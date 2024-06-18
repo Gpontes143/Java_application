@@ -117,9 +117,10 @@ try (FileWriter fw = new FileWriter(file)) {
         setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         setUndecorated(true);
 
-        jPanel1.setBackground(new java.awt.Color(153, 153, 153));
+        jPanel1.setBackground(new java.awt.Color(255, 255, 255));
 
         btExcluir.setBackground(new java.awt.Color(204, 204, 204));
+        btExcluir.setForeground(new java.awt.Color(0, 0, 0));
         btExcluir.setText("Excluir");
         btExcluir.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -128,6 +129,7 @@ try (FileWriter fw = new FileWriter(file)) {
         });
 
         btAlterar.setBackground(new java.awt.Color(204, 204, 204));
+        btAlterar.setForeground(new java.awt.Color(0, 0, 0));
         btAlterar.setText("Alterar");
         btAlterar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -136,6 +138,7 @@ try (FileWriter fw = new FileWriter(file)) {
         });
 
         btInserir.setBackground(new java.awt.Color(204, 204, 204));
+        btInserir.setForeground(new java.awt.Color(0, 0, 0));
         btInserir.setText("Inserir");
         btInserir.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -145,7 +148,7 @@ try (FileWriter fw = new FileWriter(file)) {
 
         jLabel1.setBackground(new java.awt.Color(255, 255, 255));
         jLabel1.setFont(new java.awt.Font("Segoe UI Semibold", 1, 14)); // NOI18N
-        jLabel1.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel1.setForeground(new java.awt.Color(0, 0, 0));
         jLabel1.setText("Hospede:");
 
         txthospede.setBackground(new java.awt.Color(204, 204, 204));
@@ -157,7 +160,7 @@ try (FileWriter fw = new FileWriter(file)) {
 
         jLabel2.setBackground(new java.awt.Color(255, 255, 255));
         jLabel2.setFont(new java.awt.Font("Segoe UI Semibold", 1, 14)); // NOI18N
-        jLabel2.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel2.setForeground(new java.awt.Color(0, 0, 0));
         jLabel2.setText("Nº do quarto:");
 
         txtquarto.setBackground(new java.awt.Color(204, 204, 204));
@@ -169,14 +172,14 @@ try (FileWriter fw = new FileWriter(file)) {
 
         jLabel3.setBackground(new java.awt.Color(255, 255, 255));
         jLabel3.setFont(new java.awt.Font("Segoe UI Semibold", 1, 14)); // NOI18N
-        jLabel3.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel3.setForeground(new java.awt.Color(0, 0, 0));
         jLabel3.setText("Nº do andar:");
 
         txtandar.setBackground(new java.awt.Color(204, 204, 204));
 
         jLabel4.setBackground(new java.awt.Color(255, 255, 255));
         jLabel4.setFont(new java.awt.Font("Segoe UI Semibold", 1, 14)); // NOI18N
-        jLabel4.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel4.setForeground(new java.awt.Color(0, 0, 0));
         jLabel4.setText("Inicio da Estadia:");
 
         tbEstoque.setAutoCreateRowSorter(true);
@@ -204,7 +207,7 @@ try (FileWriter fw = new FileWriter(file)) {
         tbEstoque.setDragEnabled(true);
         tbEstoque.setFillsViewportHeight(true);
         tbEstoque.setFocusable(false);
-        tbEstoque.setGridColor(new java.awt.Color(204, 204, 204));
+        tbEstoque.setGridColor(new java.awt.Color(0, 0, 0));
         tbEstoque.setShowGrid(true);
         jScrollPane1.setViewportView(tbEstoque);
         if (tbEstoque.getColumnModel().getColumnCount() > 0) {
@@ -222,7 +225,7 @@ try (FileWriter fw = new FileWriter(file)) {
 
         jLabel5.setBackground(new java.awt.Color(255, 255, 255));
         jLabel5.setFont(new java.awt.Font("Segoe UI Semibold", 1, 14)); // NOI18N
-        jLabel5.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel5.setForeground(new java.awt.Color(0, 0, 0));
         jLabel5.setText("Fim da Estadia:");
 
         txtfimestadia.setBackground(new java.awt.Color(204, 204, 204));
@@ -235,7 +238,7 @@ try (FileWriter fw = new FileWriter(file)) {
 
         jLabel6.setBackground(new java.awt.Color(255, 255, 255));
         jLabel6.setFont(new java.awt.Font("Segoe UI Semibold", 1, 14)); // NOI18N
-        jLabel6.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel6.setForeground(new java.awt.Color(0, 0, 0));
         jLabel6.setText("Dias");
 
         txtpreco.setBackground(new java.awt.Color(204, 204, 204));
@@ -264,8 +267,8 @@ try (FileWriter fw = new FileWriter(file)) {
                         .addGap(22, 22, 22)
                         .addComponent(jLabel3)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(txtandar, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addComponent(txtandar, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(jLabel4)
                         .addGap(4, 4, 4)
                         .addComponent(txtestadia, javax.swing.GroupLayout.PREFERRED_SIZE, 84, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -322,9 +325,11 @@ try (FileWriter fw = new FileWriter(file)) {
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
+        Cadastro.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED, null, java.awt.Color.gray, null, null));
         Cadastro.setText("Cadastro hotel");
         jMenuBar1.add(Cadastro);
 
+        Hospedes.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED, null, java.awt.Color.gray, null, null));
         Hospedes.setText("Hospedes");
         Hospedes.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
@@ -333,6 +338,7 @@ try (FileWriter fw = new FileWriter(file)) {
         });
         jMenuBar1.add(Hospedes);
 
+        Registro.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
         Registro.setText("Relatórios");
         Registro.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
@@ -341,6 +347,7 @@ try (FileWriter fw = new FileWriter(file)) {
         });
         jMenuBar1.add(Registro);
 
+        Close.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
         Close.setText("Close");
         Close.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
@@ -349,6 +356,7 @@ try (FileWriter fw = new FileWriter(file)) {
         });
         jMenuBar1.add(Close);
 
+        Salvar.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
         Salvar.setText("Salvar");
         Salvar.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
