@@ -19,7 +19,7 @@ public class Visualização_de_Informações_dos_Hóspedes extends javax.swing.J
 
        //carregar
    private void loadTableFromFile() {
-    File file = new File("cadastro_hotel.csv");
+    File file = new File("visualização.csv");
     if (!file.exists()) {
         return; // Se o arquivo não existir, não faça nada
     }
@@ -50,7 +50,7 @@ public class Visualização_de_Informações_dos_Hóspedes extends javax.swing.J
     
     //Salvar
     private void saveTableToFile() {
-    File file = new File("cadastro_hotel.csv");
+    File file = new File("visualização.csv");
     try (FileWriter fw = new FileWriter(file)) {
         TableModel model = tbEstoque.getModel();
         for (int i = 0; i < model.getColumnCount(); i++) {

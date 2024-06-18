@@ -19,7 +19,7 @@ public class Registro_de_Atividades_Relatórios extends javax.swing.JFrame {
 
         //carregar
    private void loadTableFromFile() {
-    File file = new File("cadastro_hotel.csv");
+    File file = new File("registro.csv");
     if (!file.exists()) {
         return; // Se o arquivo não existir, não faça nada
     }
@@ -55,7 +55,7 @@ public class Registro_de_Atividades_Relatórios extends javax.swing.JFrame {
 // Método para salvar a tabela em um arquivo CSV
 private void saveTableToFile() {
     // Criação do objeto File com o nome do arquivo
-    File file = new File("cadastro_hotel.csv");
+    File file = new File("registro.csv");
     
     try (FileWriter fw = new FileWriter(file)) {
         // Obtém o modelo de tabela da JTable
