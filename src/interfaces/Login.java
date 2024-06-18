@@ -54,7 +54,7 @@ public class Login extends javax.swing.JFrame {
         Painel_secundario.setBackground(new java.awt.Color(255, 255, 255));
 
         btClose.setFont(new java.awt.Font("Segoe UI Black", 0, 18)); // NOI18N
-        btClose.setForeground(new java.awt.Color(240, 240, 240));
+        btClose.setForeground(new java.awt.Color(255, 0, 51));
         btClose.setText("X");
         btClose.setBorder(null);
         btClose.setContentAreaFilled(false);
