@@ -31,8 +31,8 @@ public class Sobre_nos extends javax.swing.JFrame {
         jMenu1 = new javax.swing.JMenu();
         jMenu3 = new javax.swing.JMenu();
         Registro = new javax.swing.JMenu();
+        jMenu4 = new javax.swing.JMenu();
         Close = new javax.swing.JMenu();
-        Salvar = new javax.swing.JMenu();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -59,6 +59,14 @@ public class Sobre_nos extends javax.swing.JFrame {
         });
         jMenuBar1.add(Registro);
 
+        jMenu4.setText("Sobre Nós");
+        jMenu4.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jMenu4MouseClicked(evt);
+            }
+        });
+        jMenuBar1.add(jMenu4);
+
         Close.setText("Close");
         Close.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
@@ -66,14 +74,6 @@ public class Sobre_nos extends javax.swing.JFrame {
             }
         });
         jMenuBar1.add(Close);
-
-        Salvar.setText("Salvar");
-        Salvar.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                SalvarMouseClicked(evt);
-            }
-        });
-        jMenuBar1.add(Salvar);
 
         setJMenuBar(jMenuBar1);
 
@@ -110,10 +110,12 @@ public class Sobre_nos extends javax.swing.JFrame {
         dispose();
     }//GEN-LAST:event_CloseMouseClicked
 
-    private void SalvarMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_SalvarMouseClicked
+    private void jMenu4MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jMenu4MouseClicked
         // TODO add your handling code here:
-        saveTableToFile();
-    }//GEN-LAST:event_SalvarMouseClicked
+        Sobre_nos f = new Sobre_nos();
+        this.dispose();
+        f.setVisible(true);
+    }//GEN-LAST:event_jMenu4MouseClicked
 
     /**
      * @param args the command line arguments
@@ -153,10 +155,10 @@ public class Sobre_nos extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JMenu Close;
     private javax.swing.JMenu Registro;
-    private javax.swing.JMenu Salvar;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JMenu jMenu1;
     private javax.swing.JMenu jMenu3;
+    private javax.swing.JMenu jMenu4;
     private javax.swing.JMenuBar jMenuBar1;
     // End of variables declaration//GEN-END:variables
 }
