@@ -105,9 +105,12 @@ try (FileWriter fw = new FileWriter(file)) {
         jLabel6 = new javax.swing.JLabel();
         txtpreco = new javax.swing.JFormattedTextField();
         jMenuBar1 = new javax.swing.JMenuBar();
-        Cadastro = new javax.swing.JMenu();
-        Hospedes = new javax.swing.JMenu();
+        Main = new javax.swing.JMenu();
+        jMenu1 = new javax.swing.JMenu();
+        jMenu3 = new javax.swing.JMenu();
         Registro = new javax.swing.JMenu();
+        jMenu4 = new javax.swing.JMenu();
+        Apoie = new javax.swing.JMenu();
         Close = new javax.swing.JMenu();
         Salvar = new javax.swing.JMenu();
 
@@ -120,7 +123,6 @@ try (FileWriter fw = new FileWriter(file)) {
         jPanel1.setBackground(new java.awt.Color(255, 255, 255));
 
         btExcluir.setBackground(new java.awt.Color(204, 204, 204));
-        btExcluir.setForeground(new java.awt.Color(0, 0, 0));
         btExcluir.setText("Excluir");
         btExcluir.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -129,7 +131,6 @@ try (FileWriter fw = new FileWriter(file)) {
         });
 
         btAlterar.setBackground(new java.awt.Color(204, 204, 204));
-        btAlterar.setForeground(new java.awt.Color(0, 0, 0));
         btAlterar.setText("Alterar");
         btAlterar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -138,7 +139,6 @@ try (FileWriter fw = new FileWriter(file)) {
         });
 
         btInserir.setBackground(new java.awt.Color(204, 204, 204));
-        btInserir.setForeground(new java.awt.Color(0, 0, 0));
         btInserir.setText("Inserir");
         btInserir.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -148,7 +148,6 @@ try (FileWriter fw = new FileWriter(file)) {
 
         jLabel1.setBackground(new java.awt.Color(255, 255, 255));
         jLabel1.setFont(new java.awt.Font("Segoe UI Semibold", 1, 14)); // NOI18N
-        jLabel1.setForeground(new java.awt.Color(0, 0, 0));
         jLabel1.setText("Hospede:");
 
         txthospede.setBackground(new java.awt.Color(204, 204, 204));
@@ -160,7 +159,6 @@ try (FileWriter fw = new FileWriter(file)) {
 
         jLabel2.setBackground(new java.awt.Color(255, 255, 255));
         jLabel2.setFont(new java.awt.Font("Segoe UI Semibold", 1, 14)); // NOI18N
-        jLabel2.setForeground(new java.awt.Color(0, 0, 0));
         jLabel2.setText("Nº do quarto:");
 
         txtquarto.setBackground(new java.awt.Color(204, 204, 204));
@@ -172,14 +170,12 @@ try (FileWriter fw = new FileWriter(file)) {
 
         jLabel3.setBackground(new java.awt.Color(255, 255, 255));
         jLabel3.setFont(new java.awt.Font("Segoe UI Semibold", 1, 14)); // NOI18N
-        jLabel3.setForeground(new java.awt.Color(0, 0, 0));
         jLabel3.setText("Nº do andar:");
 
         txtandar.setBackground(new java.awt.Color(204, 204, 204));
 
         jLabel4.setBackground(new java.awt.Color(255, 255, 255));
         jLabel4.setFont(new java.awt.Font("Segoe UI Semibold", 1, 14)); // NOI18N
-        jLabel4.setForeground(new java.awt.Color(0, 0, 0));
         jLabel4.setText("Inicio da Estadia:");
 
         tbEstoque.setAutoCreateRowSorter(true);
@@ -225,7 +221,6 @@ try (FileWriter fw = new FileWriter(file)) {
 
         jLabel5.setBackground(new java.awt.Color(255, 255, 255));
         jLabel5.setFont(new java.awt.Font("Segoe UI Semibold", 1, 14)); // NOI18N
-        jLabel5.setForeground(new java.awt.Color(0, 0, 0));
         jLabel5.setText("Fim da Estadia:");
 
         txtfimestadia.setBackground(new java.awt.Color(204, 204, 204));
@@ -238,7 +233,6 @@ try (FileWriter fw = new FileWriter(file)) {
 
         jLabel6.setBackground(new java.awt.Color(255, 255, 255));
         jLabel6.setFont(new java.awt.Font("Segoe UI Semibold", 1, 14)); // NOI18N
-        jLabel6.setForeground(new java.awt.Color(0, 0, 0));
         jLabel6.setText("Dias");
 
         txtpreco.setBackground(new java.awt.Color(204, 204, 204));
@@ -325,20 +319,27 @@ try (FileWriter fw = new FileWriter(file)) {
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
-        Cadastro.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED, null, java.awt.Color.gray, null, null));
-        Cadastro.setText("Cadastro hotel");
-        jMenuBar1.add(Cadastro);
+        jMenuBar1.setBackground(new java.awt.Color(204, 204, 204));
 
-        Hospedes.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED, null, java.awt.Color.gray, null, null));
-        Hospedes.setText("Hospedes");
-        Hospedes.addMouseListener(new java.awt.event.MouseAdapter() {
+        Main.setText("Main");
+        Main.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
-                HospedesMouseClicked(evt);
+                MainMouseClicked(evt);
             }
         });
-        jMenuBar1.add(Hospedes);
+        jMenuBar1.add(Main);
 
-        Registro.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        jMenu1.setText("Cadastro hotel");
+        jMenu1.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jMenu1MouseClicked(evt);
+            }
+        });
+        jMenuBar1.add(jMenu1);
+
+        jMenu3.setText("Hospedes");
+        jMenuBar1.add(jMenu3);
+
         Registro.setText("Relatórios");
         Registro.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
@@ -346,6 +347,22 @@ try (FileWriter fw = new FileWriter(file)) {
             }
         });
         jMenuBar1.add(Registro);
+
+        jMenu4.setText("Sobre Nós");
+        jMenu4.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jMenu4MouseClicked(evt);
+            }
+        });
+        jMenuBar1.add(jMenu4);
+
+        Apoie.setText("Apoie");
+        Apoie.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                ApoieMouseClicked(evt);
+            }
+        });
+        jMenuBar1.add(Apoie);
 
         Close.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
         Close.setText("Close");
@@ -449,29 +466,50 @@ Object[] dados = {
         // TODO add your handling code here:
     }//GEN-LAST:event_txtprecoActionPerformed
 
-    private void CloseMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_CloseMouseClicked
+    private void MainMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_MainMouseClicked
         // TODO add your handling code here:
-        dispose();
-    }//GEN-LAST:event_CloseMouseClicked
+        Principal f = new Principal();
+        this.dispose();
+        f.setVisible(true);
+    }//GEN-LAST:event_MainMouseClicked
 
-    private void SalvarMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_SalvarMouseClicked
+    private void jMenu1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jMenu1MouseClicked
         // TODO add your handling code here:
-        saveTableToFile();  
-    }//GEN-LAST:event_SalvarMouseClicked
-
-    private void HospedesMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_HospedesMouseClicked
-        // TODO add your handling code here:
-         Visualização_de_Informações_dos_Hóspedes f = new Visualização_de_Informações_dos_Hóspedes();
-            this.dispose();
-            f.setVisible(true); 
-    }//GEN-LAST:event_HospedesMouseClicked
+        Cadastro_hotel f = new Cadastro_hotel();
+        this.dispose();
+        f.setVisible(true);
+    }//GEN-LAST:event_jMenu1MouseClicked
 
     private void RegistroMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_RegistroMouseClicked
         // TODO add your handling code here:
         Registro_de_Atividades_Relatórios f = new Registro_de_Atividades_Relatórios();
-            this.dispose();
-            f.setVisible(true); 
+        this.dispose();
+        f.setVisible(true);
     }//GEN-LAST:event_RegistroMouseClicked
+
+    private void jMenu4MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jMenu4MouseClicked
+        // TODO add your handling code here:
+        Sobre_nos f = new Sobre_nos();
+        this.dispose();
+        f.setVisible(true);
+    }//GEN-LAST:event_jMenu4MouseClicked
+
+    private void ApoieMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_ApoieMouseClicked
+        // TODO add your handling code here:
+        Apoie f = new Apoie();
+        this.dispose();
+        f.setVisible(true);
+    }//GEN-LAST:event_ApoieMouseClicked
+
+    private void SalvarMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_SalvarMouseClicked
+        // TODO add your handling code here:
+        saveTableToFile();
+    }//GEN-LAST:event_SalvarMouseClicked
+
+    private void CloseMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_CloseMouseClicked
+        // TODO add your handling code here:
+        dispose();
+    }//GEN-LAST:event_CloseMouseClicked
 
     /**
      * @param args the command line arguments
@@ -512,9 +550,9 @@ Object[] dados = {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JMenu Cadastro;
+    private javax.swing.JMenu Apoie;
     private javax.swing.JMenu Close;
-    private javax.swing.JMenu Hospedes;
+    private javax.swing.JMenu Main;
     private javax.swing.JMenu Registro;
     private javax.swing.JMenu Salvar;
     private javax.swing.JButton btAlterar;
@@ -526,6 +564,9 @@ Object[] dados = {
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel6;
+    private javax.swing.JMenu jMenu1;
+    private javax.swing.JMenu jMenu3;
+    private javax.swing.JMenu jMenu4;
     private javax.swing.JMenuBar jMenuBar1;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JScrollPane jScrollPane1;

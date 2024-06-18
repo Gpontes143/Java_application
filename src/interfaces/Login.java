@@ -89,16 +89,13 @@ public class Login extends javax.swing.JFrame {
         );
 
         Usuario_text.setFont(new java.awt.Font("Times New Roman", 1, 24)); // NOI18N
-        Usuario_text.setForeground(new java.awt.Color(0, 0, 0));
         Usuario_text.setText("Usuario");
 
         Senha_text.setFont(new java.awt.Font("Times New Roman", 1, 24)); // NOI18N
-        Senha_text.setForeground(new java.awt.Color(0, 0, 0));
         Senha_text.setText("Senha");
 
         espaco_Senha.setBackground(new java.awt.Color(153, 153, 153));
         espaco_Senha.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
-        espaco_Senha.setForeground(new java.awt.Color(0, 0, 0));
         espaco_Senha.setActionCommand("<Not Set>");
         espaco_Senha.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(0, 0, 0), 1, true));
         espaco_Senha.addActionListener(new java.awt.event.ActionListener() {
@@ -109,7 +106,6 @@ public class Login extends javax.swing.JFrame {
 
         Usuario_espaco.setBackground(new java.awt.Color(153, 153, 153));
         Usuario_espaco.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
-        Usuario_espaco.setForeground(new java.awt.Color(0, 0, 0));
         Usuario_espaco.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(0, 0, 0), 1, true));
         Usuario_espaco.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -119,7 +115,6 @@ public class Login extends javax.swing.JFrame {
 
         senha_checkbox.setBackground(new java.awt.Color(204, 204, 204));
         senha_checkbox.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
-        senha_checkbox.setForeground(new java.awt.Color(0, 0, 0));
         senha_checkbox.setText(" Mostrar a senha");
         senha_checkbox.setToolTipText("");
         senha_checkbox.addActionListener(new java.awt.event.ActionListener() {
@@ -130,7 +125,6 @@ public class Login extends javax.swing.JFrame {
 
         btLogin.setBackground(new java.awt.Color(255, 0, 51));
         btLogin.setFont(new java.awt.Font("Trebuchet MS", 1, 18)); // NOI18N
-        btLogin.setForeground(new java.awt.Color(255, 255, 255));
         btLogin.setText("Login");
         btLogin.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -138,8 +132,7 @@ public class Login extends javax.swing.JFrame {
             }
         });
 
-        jLabel2.setForeground(new java.awt.Color(240, 240, 240));
-        jLabel2.setText("Canes Solutions login interface 1.0");
+        jLabel2.setText("Santa Ceia login interface 1.0");
 
         javax.swing.GroupLayout Painel_principalLayout = new javax.swing.GroupLayout(Painel_principal);
         Painel_principal.setLayout(Painel_principalLayout);
@@ -233,7 +226,7 @@ public class Login extends javax.swing.JFrame {
         //adm
         if(Usuario.equals(adm.getUsuario()) && Senha.equals(adm.getSenha()))
         {
-            Cadastro_hotel f = new Cadastro_hotel();
+            Principal f = new Principal();
             this.dispose();
             f.setVisible(true);
             

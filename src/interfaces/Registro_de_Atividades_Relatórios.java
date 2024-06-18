@@ -116,6 +116,8 @@ private void saveTableToFile() {
         jMenuBar1 = new javax.swing.JMenuBar();
         Cadastro = new javax.swing.JMenu();
         Hospedes = new javax.swing.JMenu();
+        jMenu4 = new javax.swing.JMenu();
+        Apoie = new javax.swing.JMenu();
         Close = new javax.swing.JMenu();
         Salvar = new javax.swing.JMenu();
 
@@ -128,7 +130,6 @@ private void saveTableToFile() {
         jPanel1.setBackground(new java.awt.Color(255, 255, 255));
 
         btExcluir.setBackground(new java.awt.Color(204, 204, 204));
-        btExcluir.setForeground(new java.awt.Color(0, 0, 0));
         btExcluir.setText("Excluir");
         btExcluir.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -137,7 +138,6 @@ private void saveTableToFile() {
         });
 
         btAlterar.setBackground(new java.awt.Color(204, 204, 204));
-        btAlterar.setForeground(new java.awt.Color(0, 0, 0));
         btAlterar.setText("Alterar");
         btAlterar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -146,7 +146,6 @@ private void saveTableToFile() {
         });
 
         btInserir.setBackground(new java.awt.Color(204, 204, 204));
-        btInserir.setForeground(new java.awt.Color(0, 0, 0));
         btInserir.setText("Inserir");
         btInserir.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -156,7 +155,6 @@ private void saveTableToFile() {
 
         jLabel1.setBackground(new java.awt.Color(255, 255, 255));
         jLabel1.setFont(new java.awt.Font("Segoe UI Semibold", 1, 14)); // NOI18N
-        jLabel1.setForeground(new java.awt.Color(0, 0, 0));
         jLabel1.setText("Detalhes");
 
         txthospede.setBackground(new java.awt.Color(204, 204, 204));
@@ -168,7 +166,6 @@ private void saveTableToFile() {
 
         jLabel2.setBackground(new java.awt.Color(255, 255, 255));
         jLabel2.setFont(new java.awt.Font("Segoe UI Semibold", 1, 14)); // NOI18N
-        jLabel2.setForeground(new java.awt.Color(0, 0, 0));
         jLabel2.setText("Horário");
 
         txtquarto.setBackground(new java.awt.Color(204, 204, 204));
@@ -180,14 +177,12 @@ private void saveTableToFile() {
 
         jLabel3.setBackground(new java.awt.Color(255, 255, 255));
         jLabel3.setFont(new java.awt.Font("Segoe UI Semibold", 1, 14)); // NOI18N
-        jLabel3.setForeground(new java.awt.Color(0, 0, 0));
         jLabel3.setText("Atividade");
 
         txtandar.setBackground(new java.awt.Color(204, 204, 204));
 
         jLabel4.setBackground(new java.awt.Color(0, 0, 0));
         jLabel4.setFont(new java.awt.Font("Segoe UI Semibold", 1, 14)); // NOI18N
-        jLabel4.setForeground(new java.awt.Color(0, 0, 0));
         jLabel4.setText("Data");
 
         tbEstoque.setAutoCreateRowSorter(true);
@@ -230,7 +225,6 @@ private void saveTableToFile() {
 
         jLabel6.setBackground(new java.awt.Color(255, 255, 255));
         jLabel6.setFont(new java.awt.Font("Segoe UI Semibold", 1, 14)); // NOI18N
-        jLabel6.setForeground(new java.awt.Color(0, 0, 0));
         jLabel6.setText("Responsável");
 
         txtpreco.setBackground(new java.awt.Color(204, 204, 204));
@@ -322,6 +316,22 @@ private void saveTableToFile() {
             }
         });
         jMenuBar1.add(Hospedes);
+
+        jMenu4.setText("Sobre Nós");
+        jMenu4.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jMenu4MouseClicked(evt);
+            }
+        });
+        jMenuBar1.add(jMenu4);
+
+        Apoie.setText("Apoie");
+        Apoie.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                ApoieMouseClicked(evt);
+            }
+        });
+        jMenuBar1.add(Apoie);
 
         Close.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
         Close.setText("Close");
@@ -438,16 +448,6 @@ if (tbEstoque.getSelectedRow() != -1) {
         // TODO add your handling code here:
     }//GEN-LAST:event_txtquartoActionPerformed
 
-    private void CloseMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_CloseMouseClicked
-        // TODO add your handling code here:
-        dispose(); //fecha a pagina
-    }//GEN-LAST:event_CloseMouseClicked
-
-    private void SalvarMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_SalvarMouseClicked
-        // TODO add your handling code here:
-        saveTableToFile();  //salva usando a função
-    }//GEN-LAST:event_SalvarMouseClicked
-
     private void HospedesMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_HospedesMouseClicked
         // TODO add your handling code here:
          Visualização_de_Informações_dos_Hóspedes f = new Visualização_de_Informações_dos_Hóspedes();
@@ -461,6 +461,30 @@ if (tbEstoque.getSelectedRow() != -1) {
             this.dispose(); //cria uma nova pagina
             f.setVisible(true); 
     }//GEN-LAST:event_CadastroMouseClicked
+
+    private void CloseMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_CloseMouseClicked
+        // TODO add your handling code here:
+        dispose();
+    }//GEN-LAST:event_CloseMouseClicked
+
+    private void SalvarMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_SalvarMouseClicked
+        // TODO add your handling code here:
+        saveTableToFile();
+    }//GEN-LAST:event_SalvarMouseClicked
+
+    private void jMenu4MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jMenu4MouseClicked
+        // TODO add your handling code here:
+        Sobre_nos f = new Sobre_nos();
+        this.dispose();
+        f.setVisible(true);
+    }//GEN-LAST:event_jMenu4MouseClicked
+
+    private void ApoieMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_ApoieMouseClicked
+        // TODO add your handling code here:
+        Apoie f = new Apoie();
+        this.dispose();
+        f.setVisible(true);
+    }//GEN-LAST:event_ApoieMouseClicked
 
     /**
      * @param args the command line arguments
@@ -505,6 +529,7 @@ if (tbEstoque.getSelectedRow() != -1) {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JMenu Apoie;
     private javax.swing.JMenu Cadastro;
     private javax.swing.JMenu Close;
     private javax.swing.JMenu Hospedes;
@@ -517,6 +542,7 @@ if (tbEstoque.getSelectedRow() != -1) {
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel6;
+    private javax.swing.JMenu jMenu4;
     private javax.swing.JMenuBar jMenuBar1;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JScrollPane jScrollPane1;

@@ -98,6 +98,8 @@ public class Visualização_de_Informações_dos_Hóspedes extends javax.swing.J
         jMenu1 = new javax.swing.JMenu();
         jMenu3 = new javax.swing.JMenu();
         Registro = new javax.swing.JMenu();
+        jMenu4 = new javax.swing.JMenu();
+        Apoie = new javax.swing.JMenu();
         Close = new javax.swing.JMenu();
         Salvar = new javax.swing.JMenu();
 
@@ -108,10 +110,8 @@ public class Visualização_de_Informações_dos_Hóspedes extends javax.swing.J
         setUndecorated(true);
 
         jPanel1.setBackground(new java.awt.Color(255, 255, 255));
-        jPanel1.setForeground(new java.awt.Color(0, 0, 0));
 
         btExcluir.setBackground(new java.awt.Color(204, 204, 204));
-        btExcluir.setForeground(new java.awt.Color(0, 0, 0));
         btExcluir.setText("Excluir");
         btExcluir.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -120,7 +120,6 @@ public class Visualização_de_Informações_dos_Hóspedes extends javax.swing.J
         });
 
         btAlterar.setBackground(new java.awt.Color(204, 204, 204));
-        btAlterar.setForeground(new java.awt.Color(0, 0, 0));
         btAlterar.setText("Alterar");
         btAlterar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -129,7 +128,6 @@ public class Visualização_de_Informações_dos_Hóspedes extends javax.swing.J
         });
 
         btInserir.setBackground(new java.awt.Color(204, 204, 204));
-        btInserir.setForeground(new java.awt.Color(0, 0, 0));
         btInserir.setText("Inserir");
         btInserir.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -139,7 +137,6 @@ public class Visualização_de_Informações_dos_Hóspedes extends javax.swing.J
 
         jLabel1.setBackground(new java.awt.Color(255, 255, 255));
         jLabel1.setFont(new java.awt.Font("Segoe UI Semibold", 1, 14)); // NOI18N
-        jLabel1.setForeground(new java.awt.Color(0, 0, 0));
         jLabel1.setText("Nome:");
 
         txtnome.setBackground(new java.awt.Color(204, 204, 204));
@@ -151,7 +148,6 @@ public class Visualização_de_Informações_dos_Hóspedes extends javax.swing.J
 
         jLabel2.setBackground(new java.awt.Color(255, 255, 255));
         jLabel2.setFont(new java.awt.Font("Segoe UI Semibold", 1, 14)); // NOI18N
-        jLabel2.setForeground(new java.awt.Color(0, 0, 0));
         jLabel2.setText("Telefone");
 
         txtemail.setBackground(new java.awt.Color(204, 204, 204));
@@ -163,7 +159,6 @@ public class Visualização_de_Informações_dos_Hóspedes extends javax.swing.J
 
         jLabel4.setBackground(new java.awt.Color(255, 255, 255));
         jLabel4.setFont(new java.awt.Font("Segoe UI Semibold", 1, 14)); // NOI18N
-        jLabel4.setForeground(new java.awt.Color(0, 0, 0));
         jLabel4.setText("Email");
 
         tbEstoque.setAutoCreateRowSorter(true);
@@ -204,7 +199,6 @@ public class Visualização_de_Informações_dos_Hóspedes extends javax.swing.J
 
         jLabel5.setBackground(new java.awt.Color(255, 255, 255));
         jLabel5.setFont(new java.awt.Font("Segoe UI Semibold", 1, 14)); // NOI18N
-        jLabel5.setForeground(new java.awt.Color(0, 0, 0));
         jLabel5.setText("CPF");
 
         txtcpf.setBackground(new java.awt.Color(204, 204, 204));
@@ -228,7 +222,6 @@ public class Visualização_de_Informações_dos_Hóspedes extends javax.swing.J
 
         jCheckBox1.setBackground(new java.awt.Color(255, 255, 255));
         jCheckBox1.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
-        jCheckBox1.setForeground(new java.awt.Color(0, 0, 0));
         jCheckBox1.setText("Fez o Check-In");
         jCheckBox1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -238,7 +231,6 @@ public class Visualização_de_Informações_dos_Hóspedes extends javax.swing.J
 
         jCheckBox2.setBackground(new java.awt.Color(255, 255, 255));
         jCheckBox2.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
-        jCheckBox2.setForeground(new java.awt.Color(0, 0, 0));
         jCheckBox2.setText("Fez o Check-Out");
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
@@ -333,6 +325,22 @@ public class Visualização_de_Informações_dos_Hóspedes extends javax.swing.J
             }
         });
         jMenuBar1.add(Registro);
+
+        jMenu4.setText("Sobre Nós");
+        jMenu4.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jMenu4MouseClicked(evt);
+            }
+        });
+        jMenuBar1.add(jMenu4);
+
+        Apoie.setText("Apoie");
+        Apoie.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                ApoieMouseClicked(evt);
+            }
+        });
+        jMenuBar1.add(Apoie);
 
         Close.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
         Close.setText("Close");
@@ -464,6 +472,20 @@ Object[] dados = {
         f.setVisible(true);
     }//GEN-LAST:event_RegistroMouseClicked
 
+    private void jMenu4MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jMenu4MouseClicked
+        // TODO add your handling code here:
+        Sobre_nos f = new Sobre_nos();
+        this.dispose();
+        f.setVisible(true);
+    }//GEN-LAST:event_jMenu4MouseClicked
+
+    private void ApoieMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_ApoieMouseClicked
+        // TODO add your handling code here:
+        Apoie f = new Apoie();
+        this.dispose();
+        f.setVisible(true);
+    }//GEN-LAST:event_ApoieMouseClicked
+
     /**
      * @param args the command line arguments
      */
@@ -503,6 +525,7 @@ Object[] dados = {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JMenu Apoie;
     private javax.swing.JMenu Close;
     private javax.swing.JMenu Registro;
     private javax.swing.JMenu Salvar;
@@ -517,6 +540,7 @@ Object[] dados = {
     private javax.swing.JLabel jLabel5;
     private javax.swing.JMenu jMenu1;
     private javax.swing.JMenu jMenu3;
+    private javax.swing.JMenu jMenu4;
     private javax.swing.JMenuBar jMenuBar1;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JScrollPane jScrollPane1;
