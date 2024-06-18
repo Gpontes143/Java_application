@@ -49,9 +49,9 @@ public class Login extends javax.swing.JFrame {
         setUndecorated(true);
         setResizable(false);
 
-        Painel_principal.setBackground(new java.awt.Color(102, 102, 102));
+        Painel_principal.setBackground(new java.awt.Color(204, 204, 204));
 
-        Painel_secundario.setBackground(new java.awt.Color(0, 0, 0));
+        Painel_secundario.setBackground(new java.awt.Color(255, 255, 255));
 
         btClose.setFont(new java.awt.Font("Segoe UI Black", 0, 18)); // NOI18N
         btClose.setForeground(new java.awt.Color(240, 240, 240));
@@ -64,7 +64,7 @@ public class Login extends javax.swing.JFrame {
             }
         });
 
-        imagem_png.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/Login1.png"))); // NOI18N
+        imagem_png.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/logo hotel gengerica.png"))); // NOI18N
         imagem_png.setText("jLabel1");
 
         javax.swing.GroupLayout Painel_secundarioLayout = new javax.swing.GroupLayout(Painel_secundario);
@@ -89,14 +89,14 @@ public class Login extends javax.swing.JFrame {
         );
 
         Usuario_text.setFont(new java.awt.Font("Times New Roman", 1, 24)); // NOI18N
-        Usuario_text.setForeground(new java.awt.Color(240, 240, 240));
+        Usuario_text.setForeground(new java.awt.Color(0, 0, 0));
         Usuario_text.setText("Usuario");
 
         Senha_text.setFont(new java.awt.Font("Times New Roman", 1, 24)); // NOI18N
-        Senha_text.setForeground(new java.awt.Color(240, 240, 240));
+        Senha_text.setForeground(new java.awt.Color(0, 0, 0));
         Senha_text.setText("Senha");
 
-        espaco_Senha.setBackground(new java.awt.Color(204, 204, 204));
+        espaco_Senha.setBackground(new java.awt.Color(153, 153, 153));
         espaco_Senha.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         espaco_Senha.setForeground(new java.awt.Color(0, 0, 0));
         espaco_Senha.setActionCommand("<Not Set>");
@@ -107,7 +107,7 @@ public class Login extends javax.swing.JFrame {
             }
         });
 
-        Usuario_espaco.setBackground(new java.awt.Color(204, 204, 204));
+        Usuario_espaco.setBackground(new java.awt.Color(153, 153, 153));
         Usuario_espaco.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         Usuario_espaco.setForeground(new java.awt.Color(0, 0, 0));
         Usuario_espaco.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(0, 0, 0), 1, true));
@@ -117,9 +117,9 @@ public class Login extends javax.swing.JFrame {
             }
         });
 
-        senha_checkbox.setBackground(new java.awt.Color(102, 102, 102));
+        senha_checkbox.setBackground(new java.awt.Color(204, 204, 204));
         senha_checkbox.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
-        senha_checkbox.setForeground(new java.awt.Color(240, 240, 240));
+        senha_checkbox.setForeground(new java.awt.Color(0, 0, 0));
         senha_checkbox.setText(" Mostrar a senha");
         senha_checkbox.setToolTipText("");
         senha_checkbox.addActionListener(new java.awt.event.ActionListener() {
@@ -128,9 +128,9 @@ public class Login extends javax.swing.JFrame {
             }
         });
 
-        btLogin.setBackground(new java.awt.Color(204, 204, 204));
+        btLogin.setBackground(new java.awt.Color(255, 0, 51));
         btLogin.setFont(new java.awt.Font("Trebuchet MS", 1, 18)); // NOI18N
-        btLogin.setForeground(new java.awt.Color(0, 0, 0));
+        btLogin.setForeground(new java.awt.Color(255, 255, 255));
         btLogin.setText("Login");
         btLogin.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -148,16 +148,14 @@ public class Login extends javax.swing.JFrame {
             .addGroup(Painel_principalLayout.createSequentialGroup()
                 .addGroup(Painel_principalLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(Painel_principalLayout.createSequentialGroup()
-                        .addGap(28, 28, 28)
+                        .addGap(38, 38, 38)
                         .addGroup(Painel_principalLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(Senha_text, javax.swing.GroupLayout.PREFERRED_SIZE, 102, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(Usuario_text)
-                            .addGroup(Painel_principalLayout.createSequentialGroup()
-                                .addGap(10, 10, 10)
-                                .addGroup(Painel_principalLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(senha_checkbox, javax.swing.GroupLayout.PREFERRED_SIZE, 158, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(espaco_Senha, javax.swing.GroupLayout.PREFERRED_SIZE, 238, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(Usuario_espaco, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 238, javax.swing.GroupLayout.PREFERRED_SIZE)))))
+                            .addGroup(Painel_principalLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                .addComponent(senha_checkbox, javax.swing.GroupLayout.PREFERRED_SIZE, 158, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(espaco_Senha, javax.swing.GroupLayout.PREFERRED_SIZE, 238, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(Usuario_espaco, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 238, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(Senha_text, javax.swing.GroupLayout.PREFERRED_SIZE, 102, javax.swing.GroupLayout.PREFERRED_SIZE))))
                     .addGroup(Painel_principalLayout.createSequentialGroup()
                         .addGap(59, 59, 59)
                         .addGroup(Painel_principalLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
